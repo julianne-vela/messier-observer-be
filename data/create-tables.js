@@ -22,7 +22,7 @@ async function run() {
                     neo_reference_id INTEGER NOT NULL,
                     name VARCHAR(512) NOT NULL,
                     nasa_jpl_url VARCHAR(512) NOT NULL,
-                    absolute_magnitude_h DECIMAL(3, 5) NOT NULL,
+                    absolute_magnitude_h DECIMAL(3, 3) NOT NULL,
                     estimated_diameter_min DECIMAL(18, 12) NOT NULL,
                     estimated_diameter_max DECIMAL(18, 12) NOT NULL,
                     is_potentially_hazardous_asteroid BOOLEAN NOT NULL,
