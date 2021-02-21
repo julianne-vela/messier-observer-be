@@ -215,20 +215,18 @@ describe('app routes', () => {
 
     test('returns an individual neo with the matching neo_reference_id', async() => {
 
-      const expectation = [
-        {
-          "id": 13,
-          "neo_reference_id": 54117569,
-          "name": "2021 CS6",
-          "nasa_jpl_url": "http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54117569",
-          "absolute_magnitude_h": "27.756",
-          "estimated_diameter_min": "0.007470591300",
-          "estimated_diameter_max": "0.016704749900",
-          "is_potentially_hazardous_asteroid": false,
-          "is_sentry_object": false,
-          "owner_id": 1
-        }
-      ];
+      const expectation = {
+        "id": 13,
+        "neo_reference_id": 54117569,
+        "name": "2021 CS6",
+        "nasa_jpl_url": "http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54117569",
+        "absolute_magnitude_h": "27.756",
+        "estimated_diameter_min": "0.007470591300",
+        "estimated_diameter_max": "0.016704749900",
+        "is_potentially_hazardous_asteroid": false,
+        "is_sentry_object": false,
+        "owner_id": 1
+      };
       
       const data = await fakeRequest(app)
         .get('/neos/13')
