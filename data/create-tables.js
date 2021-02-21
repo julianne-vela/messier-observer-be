@@ -17,10 +17,16 @@ async function run() {
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
                 );           
-                CREATE TABLE animals (
+                CREATE TABLE neos (
                     id SERIAL PRIMARY KEY NOT NULL,
+                    neo_reference_id INTEGER NOT NULL,
                     name VARCHAR(512) NOT NULL,
-                    cool_factor INTEGER NOT NULL,
+                    nasa_jpl_url VARCHAR(512) NOT NULL,
+                    absolute_magnitude_h DECIMAL(5, 3) NOT NULL,
+                    estimated_diameter_min DECIMAL(18, 12) NOT NULL,
+                    estimated_diameter_max DECIMAL(18, 12) NOT NULL,
+                    is_potentially_hazardous_asteroid BOOLEAN NOT NULL,
+                    is_sentry_object BOOLEAN NOT NULL,
                     owner_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
