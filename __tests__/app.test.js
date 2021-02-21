@@ -175,8 +175,6 @@ describe('app routes', () => {
         }
       ];
 
-      console.log(data.body);
-
       const data = await fakeRequest(app)
         .get('/neos')
         .expect('Content-Type', /json/)
