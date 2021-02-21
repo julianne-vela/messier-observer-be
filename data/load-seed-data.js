@@ -1,6 +1,6 @@
 const client = require('../lib/client');
 // import our seed data:
-const animals = require('./animals.js');
+const neos = require('./neos.js');
 const usersData = require('./users.js');
 const { getEmoji } = require('../lib/emoji.js');
 
@@ -25,12 +25,29 @@ async function run() {
     const user = users[0].rows[0];
 
     await Promise.all(
-      animals.map(animal => {
+      neos.map(neo => {
         return client.query(`
-                    INSERT INTO animals (name, cool_factor, owner_id)
-                    VALUES ($1, $2, $3);
+                    INSERT INTO neos (
+                        neo_reference_id, 
+                        name, 
+                        nasa_jpl_url, 
+                        absolute_magnitude_h, 
+                        estimated_diameter, 
+                        is_potentially_hazardous_asteroid, 
+                        is_sentry_object, 
+                        owner_id)
+                    VALUES ($1, $2, $3, $4, $5, $6, $7);
                 `,
-        [animal.name, animal.cool_factor, user.id]);
+        [
+          neo.neo_reference_id, 
+          neo.name, 
+          neo.nasa_jpl_url, 
+          neo.absolute_magnitude_h, 
+          neo.estimated_diameter, 
+          neo.is_potentially_hazardous_asteroid, 
+          neo.is_sentry_object, 
+          user.id
+        ]);
       })
     );
     

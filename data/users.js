@@ -1,6 +1,6 @@
 module.exports = [
   {
-    email: 'john@arbuckle.com',
+    email: 'nasa-data@lists.arc.nasa.gov',
     hash: 1234
   }
 ];
