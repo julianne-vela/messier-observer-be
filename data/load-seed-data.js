@@ -27,16 +27,7 @@ async function run() {
     await Promise.all(
       neos.map(neo => {
         return client.query(`
-                    INSERT INTO neos (
-                        neo_reference_id, 
-                        name, 
-                        nasa_jpl_url, 
-                        absolute_magnitude_h, 
-                        estimated_diameter_min,
-                        estimated_diameter_max, 
-                        is_potentially_hazardous_asteroid, 
-                        is_sentry_object, 
-                        owner_id)
+                    INSERT INTO neos (neo_reference_id, name, nasa_jpl_url, absolute_magnitude_h, estimated_diameter_min, estimated_diameter_max, is_potentially_hazardous_asteroid, is_sentry_object, owner_id)
                     VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);
                 `,
         [
