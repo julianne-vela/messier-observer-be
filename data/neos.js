@@ -1,7 +1,7 @@
 module.exports = [
   {
     'neo_reference_id': '2005879',
-    'name': '5879 Almeria (1992 CH1)',
+    'name': '5879 Almeria 1992 CH1',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2005879',
     'absolute_magnitude_h': 17.6,
     'estimated_diameter_min': 0.8027031673,
@@ -10,7 +10,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '2489235',
-    'name': '489235 (2006 QA58)',
+    'name': '489235 2006 QA58',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2489235',
     'absolute_magnitude_h': 20.4,
     'estimated_diameter_min': 0.2210828104,
@@ -20,7 +20,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '2512234',
-    'name': '512234 (2015 VO66)',
+    'name': '512234 2015 VO66',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2512234',
     'absolute_magnitude_h': 20.5,
     'estimated_diameter_min': 0.2111324448,
@@ -30,7 +30,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '3744324',
-    'name': '(2016 CD248)',
+    'name': '2016 CD248',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=3744324',
     'absolute_magnitude_h': 22.2,
     'estimated_diameter_min': 0.096506147,
@@ -40,7 +40,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '3759724',
-    'name': '(2016 SA2)',
+    'name': '2016 SA2',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=3759724',
     'absolute_magnitude_h': 28.2,
     'estimated_diameter_min': 0.0060891262,
@@ -50,7 +50,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '3766594',
-    'name': '(2017 BY)',
+    'name': '2017 BY',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=3766594',
     'absolute_magnitude_h': 25.5,
     'estimated_diameter_min': 0.0211132445,
@@ -60,7 +60,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54016468',
-    'name': '(2020 GJ1)',
+    'name': '2020 GJ1',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54016468',
     'absolute_magnitude_h': 26.171,
     'estimated_diameter_min': 0.0155008308,
@@ -70,7 +70,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54051321',
-    'name': '(2020 QZ3)',
+    'name': '2020 QZ3',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54051321',
     'absolute_magnitude_h': 21.171,
     'estimated_diameter_min': 0.1550083083,
@@ -80,7 +80,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54103332',
-    'name': '(2020 YY4)',
+    'name': '2020 YY4',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54103332',
     'absolute_magnitude_h': 20.746,
     'estimated_diameter_min': 0.1885189346,
@@ -90,7 +90,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54110065',
-    'name': '(2021 CD1)',
+    'name': '2021 CD1',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54110065',
     'absolute_magnitude_h': 24.102,
     'estimated_diameter_min': 0.0401934214,
@@ -100,7 +100,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54110075',
-    'name': '(2021 CQ1)',
+    'name': '2021 CQ1',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54110075',
     'absolute_magnitude_h': 21.639,
     'estimated_diameter_min': 0.1249553849,
@@ -110,7 +110,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54111261',
-    'name': '(2021 CA4)',
+    'name': '2021 CA4',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54111261',
     'absolute_magnitude_h': 24.45,
     'estimated_diameter_min': 0.0342416731,
@@ -120,7 +120,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54117569',
-    'name': '(2021 CS6)',
+    'name': '2021 CS6',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54117569',
     'absolute_magnitude_h': 27.756,
     'estimated_diameter_min': 0.0074705913,
@@ -130,7 +130,7 @@ module.exports = [
   },
   {
     'neo_reference_id': '54117596',
-    'name': '(2021 CW7)',
+    'name': '2021 CW7',
     'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54117596',
     'absolute_magnitude_h': 31.207,
     'estimated_diameter_min': 0.0015245967,
