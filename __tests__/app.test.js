@@ -32,7 +32,7 @@ describe('app routes', () => {
       return client.end(done);
     });
 
-    test('returns neos', async() => {
+    test('returns messier_catalog', async() => {
 
       const expectation = [
         {
@@ -206,7 +206,7 @@ describe('app routes', () => {
       ];
       
       const data = await fakeRequest(app)
-        .get('/neos')
+        .get('/messier_catalog')
         .expect('Content-Type', /json/)
         .expect(200);
       
@@ -216,20 +216,21 @@ describe('app routes', () => {
     test('returns an individual neo with the matching neo_reference_id', async() => {
 
       const expectation = {
-        "id": 13,
-        "neo_reference_id": 54117569,
-        "name": "2021 CS6",
-        "nasa_jpl_url": "http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54117569",
-        "absolute_magnitude_h": "27.756",
-        "estimated_diameter_min": "0.007470591300",
-        "estimated_diameter_max": "0.016704749900",
-        "is_potentially_hazardous_asteroid": false,
-        "is_sentry_object": false,
+        'messier_id': 'M3',
+        'ngc_ic_num': 'NGC 5272',
+        'common_name': '–',
+        'image': '//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Messier3_-_HST_-_Potw1914a.jpg/75px-Messier3_-_HST_-_Potw1914a.jpg',
+        'object_type': 'Globular cluster',
+        'distance_from_earth_kly': 33.9,
+        'constellation': 'Canes Venatici',
+        'apparent_mag': 6.2,
+        'right_asc': '13h 42m 11.62s',
+        'declination': '+28° 22′ 38.2″',
         "owner_id": 1
       };
       
       const data = await fakeRequest(app)
-        .get('/neos/13')
+        .get('/messier_catalog/3')
         .expect('Content-Type', /json/)
         .expect(200);
       
