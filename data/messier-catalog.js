@@ -128,5 +128,18 @@ module.exports = [
     'right_asc': '16h 57m 8.92s',
     'declination': '−04° 05′ 58.07″',
     'observation_completed': false,
+  }, 
+  {
+    'messier_id': 'M11',
+    'ngc_ic_num': 'NGC 6705',
+    'common_name': 'Wild Duck Cluster',
+    'image': '//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg',
+    'object_type': 'Open cluster',
+    'distance_from_earth': 6.2,
+    'constellation': 'Scutum',
+    'apparent_mag': 6.3,
+    'right_asc': '18h 51.1m',
+    'declination': '−06° 16′',
+    'observation_completed': false,
   }
 ];

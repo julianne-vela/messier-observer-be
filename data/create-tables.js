@@ -26,7 +26,7 @@ async function run() {
                     object_type VARCHAR(512) NOT NULL,
                     distance_from_earth_kly VARCHAR(512) NOT NULL,
                     constellation VARCHAR(512) NOT NULL, 
-                    apparent_mag DECIMAL(3, 2) NOT NULL,
+                    apparent_mag DECIMAL(3, 1) NOT NULL,
                     right_asc VARCHAR(512) NOT NULL,
                     declination VARCHAR(512) NOT NULL,
                     observation_completed BOOLEAN NOT NULL,
