@@ -9,7 +9,8 @@ module.exports = [
     'constellation': 'Taurus',
     'apparent_mag': 8.4,
     'right_asc': '05h 34m 31.94s',
-    'declination': '+22° 00′ 52.2″'
+    'declination': '+22° 00′ 52.2″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M2',
@@ -21,7 +22,8 @@ module.exports = [
     'constellation': 'Aquarius',
     'apparent_mag': 6.3,
     'right_asc': '21h 33m 27.02s',
-    'declination': '−00° 49′ 23.7″'
+    'declination': '−00° 49′ 23.7″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M3',
@@ -33,7 +35,8 @@ module.exports = [
     'constellation': 'Canes Venatici',
     'apparent_mag': 6.2,
     'right_asc': '13h 42m 11.62s',
-    'declination': '+28° 22′ 38.2″'
+    'declination': '+28° 22′ 38.2″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M4',
@@ -45,7 +48,8 @@ module.exports = [
     'constellation': 'Scorpius',
     'apparent_mag': 5.9,
     'right_asc': '16h 23m 35.22s',
-    'declination': '−26° 31′ 32.7″'
+    'declination': '−26° 31′ 32.7″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M5',
@@ -57,7 +61,8 @@ module.exports = [
     'constellation': 'Serpens',
     'apparent_mag': 6.7,
     'right_asc': '15h 18m 33.22s',
-    'declination': '+02° 04′ 51.7″'
+    'declination': '+02° 04′ 51.7″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M6',
@@ -69,7 +74,8 @@ module.exports = [
     'constellation': 'Scorpius',
     'apparent_mag': 4.2,
     'right_asc': '17h 40.1m',
-    'declination': '−32° 13′'
+    'declination': '−32° 13′',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M7',
@@ -81,7 +87,8 @@ module.exports = [
     'constellation': 'Scorpius',
     'apparent_mag': 3.3,
     'right_asc': '17h 53m 51.2s',
-    'declination': '−34° 47′ 34″'
+    'declination': '−34° 47′ 34″',
+    'observation_completed': false, 
   },
   {
     'messier_id': 'M8',
@@ -93,7 +100,8 @@ module.exports = [
     'constellation': 'Sagittarius',
     'apparent_mag': 6,
     'right_asc': '18h 03m 37s',
-    'declination': '−24° 23′ 12″'
+    'declination': '−24° 23′ 12″',
+    'observation_completed': false, 
   },
   {
     'messier_id': 'M9',
@@ -105,7 +113,8 @@ module.exports = [
     'constellation': 'Ophiuchus',
     'apparent_mag': 8.4,
     'right_asc': '17h 19m 11.78s',
-    'declination': '−18° 30′ 58.5″'
+    'declination': '−18° 30′ 58.5″',
+    'observation_completed': false,
   },
   {
     'messier_id': 'M10',
@@ -117,6 +126,7 @@ module.exports = [
     'constellation': 'Ophiuchus',
     'apparent_mag': 6.4,
     'right_asc': '16h 57m 8.92s',
-    'declination': '−04° 05′ 58.07″'
+    'declination': '−04° 05′ 58.07″',
+    'observation_completed': false,
   }
 ];
