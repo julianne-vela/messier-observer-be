@@ -38,11 +38,11 @@ async function run() {
 
         const user = users[0].rows[0];
             
-        const object_types = responses.map(({ rows }) => rows[0]);
+        const types = responses.map(({ rows }) => rows[0]);
 
         await Promise.all(
             messier_catalog.map(messier_object => {
-                const typeId = getTypeId(messier_object, object_types);
+                const typeId = getTypeId(messier_object, types);
 
                 return client.query(`
                     INSERT INTO messier_catalog (
