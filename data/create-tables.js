@@ -17,16 +17,19 @@ async function run() {
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
                 );           
-                CREATE TABLE neos (
+                CREATE TABLE messier_catalog (
                     id SERIAL PRIMARY KEY NOT NULL,
-                    neo_reference_id INTEGER NOT NULL,
-                    name VARCHAR(512) NOT NULL,
-                    nasa_jpl_url VARCHAR(512) NOT NULL,
-                    absolute_magnitude_h DECIMAL(5, 3) NOT NULL,
-                    estimated_diameter_min DECIMAL(18, 12) NOT NULL,
-                    estimated_diameter_max DECIMAL(18, 12) NOT NULL,
-                    is_potentially_hazardous_asteroid BOOLEAN NOT NULL,
-                    is_sentry_object BOOLEAN NOT NULL,
+                    messier_id VARCHAR(512) NOT NULL,
+                    ngc_ic_num VARCHAR(512) NOT NULL,
+                    common_name VARCHAR(512) NOT NULL,
+                    image VARCHAR(512) NOT NULL,
+                    object_type VARCHAR(512) NOT NULL,
+                    distance_from_earth_kly VARCHAR(512) NOT NULL,
+                    constellation VARCHAR(512) NOT NULL, 
+                    apparent_mag DECIMAL(3, 1) NOT NULL,
+                    right_asc VARCHAR(512) NOT NULL,
+                    declination VARCHAR(512) NOT NULL,
+                    observation_completed BOOLEAN NOT NULL,
                     owner_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
