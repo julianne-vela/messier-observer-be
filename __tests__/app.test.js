@@ -296,17 +296,18 @@ describe('app routes', () => {
     test('updates an entry in our DB', async() => {
 
       const newEntry = {
-        "messier_id": "M1",
-        "ngc_ic_num": "NGC 6705",
-        "common_name": "Wild Buck Cluster",
-        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
-        "object_type": "Open cluster",
-        "distance_from_earth_kly": "6.2",
-        "constellation": "Scutum",
-        "apparent_mag": "6.3",
-        "right_asc": "18h 51.1m",
-        "declination": "−06° 16′",
-        "observation_completed": false
+          "id": 1,
+          "messier_id": "M1",
+          "ngc_ic_num": "NGC 1952",
+          "common_name": "Crab Nebula",
+          "image": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/75px-Crab_Nebula.jpg",
+          "object_type": "Supernova remnant",
+          "distance_from_earth_kly": "4.9–8.1",
+          "constellation": "Taurus",
+          "apparent_mag": "8.4",
+          "right_asc": "05h 34m 31.94s",
+          "declination": "+22° 00′ 52.2″",
+          "observation_completed": false,
       };
 
       const expectedEntry = {
@@ -328,7 +329,5 @@ describe('app routes', () => {
 
       expect(updatedObject.body).toEqual(expectedEntry);
     });
-
-
   });
 });
