@@ -1,4 +1,4 @@
-/* eslint-disable quotes */
+/* eslint-disable */
 require('dotenv').config();
 
 const { execSync } = require('child_process');
@@ -229,7 +229,7 @@ describe('app routes', () => {
         "common_name": "Wild Duck Cluster",
         "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
         "object_type": "Open cluster",
-        "distance_from_earth": "6.2",
+        "distance_from_earth_kly": "6.2",
         "constellation": "Scutum",
         "apparent_mag": "6.3",
         "right_asc": "18h 51.1m",
@@ -239,17 +239,96 @@ describe('app routes', () => {
 
       const expectedEntry = {
         ...newEntry,
-        id: 11,
+        id: 12,
         owner_id: 1,
       };
       
       const data = await fakeRequest(app)
-        .get('/messier_catalog')
+        .post('/messier_catalog')
         .send(newEntry)
         .expect('Content-Type', /json/)
         .expect(200);
       
-      expect(data.body[0]).toEqual(expectedEntry);
+      expect(data.body).toEqual(expectedEntry);
+
+      const messier_catalog = await fakeRequest(app)
+        .get('/messier_catalog') 
+        .send(newEntry)
+        .expect('Content-Type', /json/)
+        .expect(200);
+
+      const M11 = messier_catalog.body.find(object => object.messier_id === 'M11');
+
+      expect(M11).toEqual(expectedEntry);
     });
+
+    test('deletes a single entry with the matching id', async() => {
+
+      const expectation = {
+        "id": 12,
+        "messier_id": "M11",
+        "ngc_ic_num": "NGC 6705",
+        "common_name": "Wild Duck Cluster",
+        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
+        "object_type": "Open cluster",
+        "distance_from_earth_kly": "6.2",
+        "constellation": "Scutum",
+        "apparent_mag": "6.3",
+        "right_asc": "18h 51.1m",
+        "declination": "−06° 16′",
+        "observation_completed": false,
+        "owner_id": 1
+      }
+
+      const data = await fakeRequest(app)
+        .delete('/messier_catalog/12')
+        .expect('Content-Type', /json/)
+        .expect(200);
+
+      const nothing = await fakeRequest(app)
+        .get('/messier_catalog/12')
+        .expect('Content-Type', /json/)
+        .expect(200);
+      
+      expect(nothing.body).toEqual('');
+    });
+
+    test('updates an entry in our DB', async() => {
+
+      const newEntry = {
+        "messier_id": "M1",
+        "ngc_ic_num": "NGC 6705",
+        "common_name": "Wild Buck Cluster",
+        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
+        "object_type": "Open cluster",
+        "distance_from_earth_kly": "6.2",
+        "constellation": "Scutum",
+        "apparent_mag": "6.3",
+        "right_asc": "18h 51.1m",
+        "declination": "−06° 16′",
+        "observation_completed": false
+      };
+
+      const expectedEntry = {
+        ...newEntry,
+        id: 1,
+        owner_id: 1,
+      };
+      
+      await fakeRequest(app)
+        .put('/messier_catalog/1')
+        .send(newEntry)
+        .expect('Content-Type', /json/)
+        .expect(200);
+
+      const updatedObject = await fakeRequest(app)
+        .get('/messier_catalog/1')
+        .expect('Content-Type', /json/)
+        .expect(200);
+
+      expect(updatedObject.body).toEqual(expectedEntry);
+    });
+
+
   });
 });
