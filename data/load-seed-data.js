@@ -26,13 +26,13 @@ async function run() {
       
         
         const responses = await Promise.all(
-            typesData.map(object => {
+            typesData.map(type => {
                 return client.query(`
-                INSERT INTO object_types (type)
-                VALUES ($1)
-                RETURNING *;
-                `,
-                [object.type]);
+                            INSERT INTO object_types (type)
+                            VALUES ($1)
+                            RETURNING *;
+                        `,
+                [type.type]);
             })
         );
 
@@ -51,7 +51,8 @@ async function run() {
                         common_name, 
                         image, 
                         type_id, 
-                        distance_from_earth_kly, constellation, 
+                        distance_from_earth_kly, 
+                        constellation, 
                         apparent_mag,
                         right_asc,
                         declination,

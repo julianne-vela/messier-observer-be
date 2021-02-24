@@ -28,6 +28,7 @@ async function run() {
                     common_name VARCHAR(512) NOT NULL,
                     image VARCHAR(512) NOT NULL,
                     object_type VARCHAR(512) NOT NULL,
+                    type_id INTEGER NOT NULL,
                     distance_from_earth_kly VARCHAR(512) NOT NULL,
                     constellation VARCHAR(512) NOT NULL, 
                     apparent_mag DECIMAL(3, 1) NOT NULL,
