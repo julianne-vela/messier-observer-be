@@ -272,9 +272,7 @@ describe('app routes', () => {
         .expect('Content-Type', /json/)
         .expect(200);
 
-      const Mtest = messier_catalog.body.find(object => object.messier_id === 'Mtest');
-
-      expect(Mtest).toEqual(expectedEntry);
+      expect(messier_catalog.body).toContainEqual(expectedEntry);
     });
 
     test('deletes a single entry with the matching id', async() => {
