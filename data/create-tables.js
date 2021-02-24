@@ -6,24 +6,28 @@ run();
 
 async function run() {
 
-  try {
+    try {
     // initiate connecting to db
-    await client.connect();
+        await client.connect();
 
-    // run a query to create tables
-    await client.query(`
+        // run a query to create tables
+        await client.query(`
                 CREATE TABLE users (
                     id SERIAL PRIMARY KEY,
                     email VARCHAR(256) NOT NULL,
                     hash VARCHAR(512) NOT NULL
-                );           
+                );   
+                CREATE TABLE object_types (
+                    id SERIAL PRIMARY KEY,
+                    type VARCHAR(512) NOT NULL
+                );        
                 CREATE TABLE messier_catalog (
                     id SERIAL PRIMARY KEY NOT NULL,
                     messier_id VARCHAR(512) NOT NULL,
                     ngc_ic_num VARCHAR(512) NOT NULL,
                     common_name VARCHAR(512) NOT NULL,
                     image VARCHAR(512) NOT NULL,
-                    object_type VARCHAR(512) NOT NULL,
+                    type_id INTEGER NOT NULL,
                     distance_from_earth_kly VARCHAR(512) NOT NULL,
                     constellation VARCHAR(512) NOT NULL, 
                     apparent_mag DECIMAL(3, 1) NOT NULL,
@@ -34,15 +38,15 @@ async function run() {
             );
         `);
 
-    console.log('create tables complete', getEmoji(), getEmoji(), getEmoji());
-  }
-  catch(err) {
+        console.log('create tables complete', getEmoji(), getEmoji(), getEmoji());
+    }
+    catch(err) {
     // problem? let's see the error...
-    console.log(err);
-  }
-  finally {
+        console.log(err);
+    }
+    finally {
     // success or failure, need to close the db connection
-    client.end();
-  }
+        client.end();
+    }
 
 }
