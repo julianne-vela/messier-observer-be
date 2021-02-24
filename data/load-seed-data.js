@@ -4,7 +4,7 @@ const messier_catalog = require('./messier-catalog.js');
 const usersData = require('./users.js');
 const { getEmoji } = require('../lib/emoji.js');
 const { getTypeId } = require('./dataUtils');
-const typesData = require('../data/object-types.js');
+const typesData = require('./object-types.js');
 
 run();
 

@@ -41,8 +41,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 1952",
           "common_name": "Crab Nebula",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/75px-Crab_Nebula.jpg",
-          "object_type": "Supernova remnant",
-          "type_id": "4",
+          "type_id": 4,
           "distance_from_earth_kly": "4.9–8.1",
           "constellation": "Taurus",
           "apparent_mag": "8.4",
@@ -57,8 +56,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 7089",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Messier2_-_HST_-_Potw1913a.jpg/75px-Messier2_-_HST_-_Potw1913a.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "33",
           "constellation": "Aquarius",
           "apparent_mag": "6.3",
@@ -73,8 +71,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 5272",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Messier3_-_HST_-_Potw1914a.jpg/75px-Messier3_-_HST_-_Potw1914a.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "33.9",
           "constellation": "Canes Venatici",
           "apparent_mag": "6.2",
@@ -89,8 +86,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6121",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/9/90/Globular_star_cluster_Messier_4.jpg/75px-Globular_star_cluster_Messier_4.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "7.2",
           "constellation": "Scorpius",
           "apparent_mag": "5.9",
@@ -105,8 +101,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 5904",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Messier_5_-_HST.jpg/75px-Messier_5_-_HST.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "24.5",
           "constellation": "Serpens",
           "apparent_mag": "6.7",
@@ -121,8 +116,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6405",
           "common_name": "Butterfly Cluster",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/7/7f/M6a.jpg/75px-M6a.jpg",
-          "object_type": "Open cluster",
-          "type_id": "3",
+          "type_id": 3,
           "distance_from_earth_kly": "1.6",
           "constellation": "Scorpius",
           "apparent_mag": "4.2",
@@ -137,8 +131,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6475",
           "common_name": "Ptolemy Cluster",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/The_star_cluster_Messier_7.jpg/75px-The_star_cluster_Messier_7.jpg",
-          "object_type": "Open cluster",
-          "type_id": "3",
+          "type_id": 3,
           "distance_from_earth_kly": "0.65–1.31",
           "constellation": "Scorpius",
           "apparent_mag": "3.3",
@@ -153,8 +146,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6523",
           "common_name": "Lagoon Nebula",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/7/76/LagoonHunterWilson.jpg/75px-LagoonHunterWilson.jpg",
-          "object_type": "Nebula with cluster",
-          "type_id": "2",
+          "type_id": 2,
           "distance_from_earth_kly": "4.1",
           "constellation": "Sagittarius",
           "apparent_mag": "6.0",
@@ -169,8 +161,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6333",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Globular_cluster_Messier_9_%28captured_by_the_Hubble_Space_Telescope%29.tif/lossy-page1-75px-Globular_cluster_Messier_9_%28captured_by_the_Hubble_Space_Telescope%29.tif.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "25.8",
           "constellation": "Ophiuchus",
           "apparent_mag": "8.4",
@@ -185,8 +176,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 6254",
           "common_name": "–",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/6/67/Messier_10_Hubble_WikiSky.jpg/75px-Messier_10_Hubble_WikiSky.jpg",
-          "object_type": "Globular cluster",
-          "type_id": "1",
+          "type_id": 1,
           "distance_from_earth_kly": "14.3",
           "constellation": "Ophiuchus",
           "apparent_mag": "6.4",
@@ -194,7 +184,22 @@ describe('app routes', () => {
           "declination": "−04° 05′ 58.07″",
           "observation_completed": false,
           "owner_id": 1
-        }
+        },
+        {
+        "id": 11,
+        "messier_id": "M11",
+        "ngc_ic_num": "NGC 6705",
+        "common_name": "Wild Duck Cluster",
+        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
+        "type_id": 3,
+        "distance_from_earth_kly": "6.2",
+        "constellation": "Scutum",
+        "apparent_mag": "6.3",
+        "right_asc": "18h 51.1m",
+        "declination": "−06° 16′",
+        "observation_completed": false,
+        "owner_id": 1
+      }
       ];
       
       const data = await fakeRequest(app)
@@ -213,7 +218,7 @@ describe('app routes', () => {
         "ngc_ic_num": "NGC 5272",
         "common_name": "–",
         "image": "//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Messier3_-_HST_-_Potw1914a.jpg/75px-Messier3_-_HST_-_Potw1914a.jpg",
-        "object_type": "Globular cluster",
+        "type_id": 1,
         "distance_from_earth_kly": "33.9",
         "constellation": "Canes Venatici",
         "apparent_mag": "6.2",
@@ -234,16 +239,16 @@ describe('app routes', () => {
     test('creates a new entry and that new entry is in our messier_catalog DB', async() => {
 
       const newEntry = {
-        "messier_id": "M11",
-        "ngc_ic_num": "NGC 6705",
-        "common_name": "Wild Duck Cluster",
-        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
-        "object_type": "Open cluster",
+        "messier_id": "Mtest",
+        "ngc_ic_num": "NGC test",
+        "common_name": "test Cluster",
+        "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/test.jpg/75px-test.jpg",
+        "type_id": 3,
         "distance_from_earth_kly": "6.2",
-        "constellation": "Scutum",
+        "constellation": "test",
         "apparent_mag": "6.3",
-        "right_asc": "18h 51.1m",
-        "declination": "−06° 16′",
+        "right_asc": "test",
+        "declination": "test",
         "observation_completed": false
       };
 
@@ -267,20 +272,20 @@ describe('app routes', () => {
         .expect('Content-Type', /json/)
         .expect(200);
 
-      const M11 = messier_catalog.body.find(object => object.messier_id === 'M11');
+      const Mtest = messier_catalog.body.find(object => object.messier_id === 'Mtest');
 
-      expect(M11).toEqual(expectedEntry);
+      expect(Mtest).toEqual(expectedEntry);
     });
 
     test('deletes a single entry with the matching id', async() => {
 
       const expectation = {
-        "id": 12,
+        "id": 11,
         "messier_id": "M11",
         "ngc_ic_num": "NGC 6705",
         "common_name": "Wild Duck Cluster",
         "image": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg",
-        "object_type": "Open cluster",
+        "type_id": 3,
         "distance_from_earth_kly": "6.2",
         "constellation": "Scutum",
         "apparent_mag": "6.3",
@@ -311,7 +316,7 @@ describe('app routes', () => {
           "ngc_ic_num": "NGC 1952",
           "common_name": "Crab Nebula",
           "image": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/75px-Crab_Nebula.jpg",
-          "object_type": "Supernova remnant",
+          "type_id": 4,
           "distance_from_earth_kly": "4.9–8.1",
           "constellation": "Taurus",
           "apparent_mag": "8.4",

@@ -1,5 +1,5 @@
 /* eslint-disable */
-const {getTypeId} = require('../data/dataUtils.js');
+const { getTypeId } = require('../data/dataUtils.js');
 
 describe('data utils', () => {
 

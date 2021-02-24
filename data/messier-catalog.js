@@ -146,7 +146,7 @@ module.exports = [
         'image': '//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Eso1430a.jpg/75px-Eso1430a.jpg',
         'object_type': 'Open cluster',
         'type_id': '3',
-        'distance_from_earth': 6.2,
+        'distance_from_earth_kly': 6.2,
         'constellation': 'Scutum',
         'apparent_mag': 6.3,
         'right_asc': '18h 51.1m',
